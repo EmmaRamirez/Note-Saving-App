@@ -9,12 +9,13 @@ $warn-color: tomato;
 
 body {
   background: linear-gradient(to bottom, $theme-color, $accent-color-2);
-  font-family: "Roboto", sans-serif;
-  font-size: 1.1rem;
-}
-
-body, html {
-  height: 100%;
+  font: {
+    family: "Robot", sans-serif;
+    size: 1.1rem;
+  }
+  &, html {
+    height: 100%;
+  }
 }
 
 * {
@@ -39,8 +40,9 @@ label {
   overflow: hidden;
   margin: 0 auto;
   max-width: 45rem;
-  padding: 2.5rem;
-  padding-top: 1rem;
+  padding: 2.5rem {
+    top: 1rem;
+  }
   position: relative;
   top: 25vh;
 }
@@ -53,9 +55,11 @@ input, textarea, border-radius, select {
   margin-top: 1rem;
 }
 textarea {
-  background-color: #fff; 
-  background-image: linear-gradient(#eee .1em, transparent .1em);
-  background-size: 100% 1.25em;
+  background: {
+    color: #fff;
+    image: linear-gradient(#eee .1em, transparent .1em);
+    size: 100% 1.25em;
+  }
   font-size: 1.25rem;
   height: 10rem;
   width: 100%;

@@ -13,9 +13,10 @@ body {
     family: "Robot", sans-serif;
     size: 1.1rem;
   }
-  &, html {
-    height: 100%;
-  }
+}
+
+body, html {
+  height: 100%;
 }
 
 * {
@@ -35,6 +36,7 @@ label {
 }
 
 .container {
+  animation: 2s appear;
   background: #eeeefa;
   border-top: .5rem solid #64e264;
   overflow: hidden;
@@ -101,5 +103,11 @@ button {
     bottom: -5rem;
     opacity: 0;
     transition: all 300ms ease-in;
+  }
+}
+
+@keyframes appear {
+  from {
+    opacity: 0;
   }
 }

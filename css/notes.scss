@@ -5,6 +5,7 @@
 $theme-color: #0b0b29;
 $accent-color: #64e264;
 $accent-color-2: #572662;
+$accent-color-3: #3babd4;
 $warn-color: tomato;
 
 body {
@@ -36,7 +37,7 @@ label {
 }
 
 .container {
-  animation: 2s appear;
+  animation: 1s appear;
   background: #eeeefa;
   border-top: .5rem solid #64e264;
   overflow: hidden;
@@ -56,13 +57,14 @@ input, textarea, border-radius, select {
   border: 1px solid #ddd;
   margin-top: 1rem;
 }
-textarea {
+.current-note {
   background: {
     color: #fff;
     image: linear-gradient(#eee .1em, transparent .1em);
     size: 100% 1.25em;
   }
   font-size: 1.25rem;
+  line-height: 1.25em;
   height: 10rem;
   width: 100%;
 }
@@ -79,6 +81,12 @@ button {
     background: tomato;
     &:hover {
       background: darken($warn-color, 10%);
+    }
+  }
+  &.view {
+    background: $accent-color-3;
+    &:hover {
+      background: darken($accent-color-3, 10%);
     }
   }
   &:hover {
@@ -109,5 +117,6 @@ button {
 @keyframes appear {
   from {
     opacity: 0;
+    transform: scale(.1);
   }
 }

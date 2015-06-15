@@ -8,14 +8,16 @@
   <body>
     <div class="container">
       <div class="container-top">
-        <h1><i class="fa fa-file-text-o"></i> MegaNote3000</h1>
+        <h1><i class="fa fa-file-text-o"></i> MegaNote3000&trade;</h1>
         <label>Notes:</label><select id="list"></select>
-        <button class="remove" id="removenote" onclick="clearNotes()"><i class="fa fa-trash"></i> Clear Notes</button><br/>
+        <button class="remove" id="removenote" onclick="clearNotes()"><i class="fa fa-trash"></i> Clear Notes</button>
+        <br/>
         <label>Name:</label><input id="currentname" type="text" value="" placeholder="e.g. 'Shopping List'" autofocus />
         <button id="addnote" onclick="addNote()"><i class="fa fa-plus"></i> New Note</button><br/>
       </div>
-      <textarea id="currentnote"></textarea>
+      <textarea class="current-note" id="currentnote"></textarea>
       <div class="saved-notification unsaved"><i class="fa fa-check-circle"></i> saved!</div> 
+      
     </div>
     <script src="min/notes.min.js"></script>
   </body>

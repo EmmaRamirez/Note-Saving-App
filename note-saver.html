@@ -7,18 +7,40 @@
   </head>
   <body>
     <div class="container">
+      <div class="note-panel-left">
+        <button onclick="reloadPage()"><i class="fa fa-file-text-o"></i> MegaNote3000&trade;</button>
+        <ul id="note-list">
+        </ul>
+        <button id="clearnote" class="clear-btn" onclick="clearNotes"><i class="fa fa-trash"></i> Clear All Notes</button>
+      </div>
+      <div class="note-panel-right">
+        <label>Note Name:</label><input id="currentname" type="text" placeholder="e.g. 'Shoppping List'" autofocus required />
+        <label>Note Tags:</label><input id="notetags" type="text" placeholder="e.g. 'Appples, Corn Dogs'" />
+        <p id="current-note" class="current-note"></p>
+      
+      </div>
+    
+    </div>
+    
+    <script src="notes.js"></script>
+    
+    
+    
+<!--
+    <div class="container">
       <div class="container-top">
         <h1><i class="fa fa-file-text-o"></i> MegaNote3000&trade;</h1>
         <label>Notes:</label><select id="list"></select>
         <button class="remove" id="removenote" onclick="clearNotes()"><i class="fa fa-trash"></i> Clear Notes</button>
         <br/>
-        <label>Name:</label><input id="currentname" type="text" value="" placeholder="e.g. 'Shopping List'" autofocus />
+        <label>Name:</label><input id="currentname" type="text" value="" placeholder="e.g. 'Shopping List'" autofocus required />
         <button id="addnote" onclick="addNote()"><i class="fa fa-plus"></i> New Note</button><br/>
       </div>
       <textarea class="current-note" id="currentnote"></textarea>
       <div class="saved-notification unsaved"><i class="fa fa-check-circle"></i> saved!</div> 
       
     </div>
-    <script src="min/notes.min.js"></script>
+    <script src="notes.js"></script>
+-->
   </body>
 </html>
